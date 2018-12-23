@@ -4,4 +4,17 @@ cert:
 pwd:
 	htpasswd -c auth/nginx.htpasswd admin
 
+up:
+	docker-compose up -d --build
 
+down:
+	docker-compose down
+
+restart:
+	make down && make up
+
+ps:
+	docker-compose ps
+
+exec:
+	docker exec -it registry_nginx_1 bash

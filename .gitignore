@@ -1,1 +1,3 @@
 auth/nginx.htpasswd
+auth/registry.codreamer.online.key
+auth/registry.codreamer.online.pem

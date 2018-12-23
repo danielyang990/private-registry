@@ -6,7 +6,7 @@ nginx:
   links:
     - registry:registry
   volumes:
-    - `pwd`/auth/:/etc/nginx/conf.d
+    - ./auth/:/etc/nginx/conf.d
 
 registry:
   image: registry:2.2.1
